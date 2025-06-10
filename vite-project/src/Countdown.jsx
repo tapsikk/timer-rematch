@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Countdown.css';
+import '/Countdown.css';
 
 // КОНФИГУРАЦИЯ ТАЙМЕРА
 // Установите здесь дату и время, до которого будет идти отсчет
@@ -44,7 +44,7 @@ const Countdown = () => {
       <div className="creator">
         <p>Создано: </p>
         <img
-         src='../public/image/discord.png'
+         src='/image/discord-logo.png'
           alt="BallCloseup_16_9.png"
           className="discord-logo"
         />
