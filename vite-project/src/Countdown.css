@@ -1,0 +1,98 @@
+/* --- Подключение красивого шрифта с Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@400;700&display=swap');
+/*
+  Рекомендации по шрифтам:
+  - Playfair Display: Элегантный, с засечками.
+  - Montserrat: Современный, чистый, без засечек.
+  - Lobster: Игривый, рукописный.
+  - Cormorant Garamond: Классический, утонченный.
+  Просто замените имя в @import и в font-family.
+*/
+
+.countdown-container {
+  /* --- ФОНОВОЕ ИЗОБРАЖЕНИЕ --- */
+  background-image: url('../public/image/BallCloseup_16_9.png'); /* Замените на URL вашего фона */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Эффект параллакса при скролле */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; /* --- ОСНОВНОЙ ШРИФТ ДЛЯ ТЕКСТА --- */
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Скрывает части фото, выходящие за экран */
+}
+
+.main-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости */
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px); /* Эффект размытого стекла */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 700px;
+}
+
+/* --- МЕСТО ДЛЯ ЛОГОТИПА --- */
+.logo-placeholder {
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 2.2rem;
+}
+
+/* --- СТИЛИ ТАЙМЕРА --- */
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-value {
+  font-family: 'Montserrat', sans-serif; /* --- ШРИФТ ДЛЯ ЦИФР --- */
+  font-size: 5rem; /* Размер цифр */
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  width: 100px;
+}
+
+.time-label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.creator {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: left;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.discord-logo {
+  width: 150px;
+}
+
+.ad {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
