@@ -44,7 +44,7 @@ const Countdown = () => {
       <div className="creator">
         <p>Создано: </p>
         <img
-         src='/image/discord-logo.png'cd
+         src='/image/discord-logo.png'
           alt="BallCloseup_16_9.png"
           className="discord-logo"
         />
